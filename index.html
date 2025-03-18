@@ -1,68 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-    <title>barber</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-    body {margin: 0;}
-    
-    ul.topnav {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    ul.topnav li {float: left;}
-    
-    ul.topnav li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    ul.topnav li a:hover:not(.active) {background-color: #111;}
-    
-    ul.topnav li a.active {background-color: #04AA6D;}
-    
-    ul.topnav li.right {float: right;}
-    
-    @media screen and (max-width: 600px) {
-      ul.topnav li.right, 
-      ul.topnav li {float: none;}
-    }
-    </style>
-    </head>
-    <body>
-    
-    <ul class="topnav">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#news">News</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li class="right"><a href="#about">About</a></li>
-    </ul>
-    
-    <div style="padding:0 16px;">
-      <h2>Responsive Topnav Example</h2>
-      <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
-      <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-      <h4>Resize the browser window to see the effect.</h4>
-    </div>
-    
-    </body>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>tiago</h1>
+
+    <header>
+        <h1>Barber Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <div class="container">
+            <div class="text">
+                <h2>Un style, une coupe, une signature.</h2>
+                <p>Venez découvrir l’expérience Barber Shop, où chaque coupe est une œuvre d’art.</p>
+            </div>
+            <div class="image">
+                <img src="barber.jpg" alt="Barber Shop">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="service-container">
+            <div class="service-box">💈 Coupe Classique</div>
+            <div class="service-box">🪒 Rasage Traditionnel</div>
+            <div class="service-box">✂️ Taille de Barbe</div>
+        </div>
+    </section>
+
+    <section id="a-propos">
+        <h2>À Propos</h2>
+        <p>Nous sommes passionnés par l’art du rasage et de la coupe, offrant des services de qualité avec une touche moderne.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>📍 123 Rue du Barber, Lyon</p>
+        <p>📞 06 12 34 56 78</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Barber Shop - Tous droits réservés</p>
+    </footer>
+
 </body>
 </html>

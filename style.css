@@ -1,3 +1,108 @@
+/* Styles généraux */
 * {
-    font-family: Rye;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rye', cursive;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+}
+
+/* Header et Navigation */
+header {
+    background-color: #8B0000;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Section Accueil */
+#accueil {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+#accueil .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#accueil .text {
+    flex: 1;
+    padding: 20px;
+}
+
+#accueil .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Section Services */
+#services {
+    padding: 50px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    background: #8B0000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    font-size: 18px;
+}
+
+/* Section À Propos */
+#a-propos {
+    padding: 50px;
+}
+
+/* Section Contact */
+#contact {
+    padding: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    padding: 20px;
+    margin-top: 30px;
 }
