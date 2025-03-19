@@ -111,3 +111,32 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+
+.hero {
+    background: url('fond.jpg') no-repeat center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+
+
+
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
