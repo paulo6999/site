@@ -146,18 +146,24 @@ footer {
 }
 
 
-/* Section Services */
 #services {
     padding: 50px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh; 
 }
+
 
 .service-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    align-items: center; 
 }
+
 
 .service-box {
     background: #9B2E2E;
@@ -181,7 +187,12 @@ footer {
 .service-box .price {
     font-weight: bold;
     font-size: 20px;
-    color: #dadada;
+    color: white;
+    background-color: #B84545;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 /* Responsive */
@@ -189,4 +200,23 @@ footer {
     .service-box {
         width: 90%;
     }
+}
+
+
+.btn-reserver {
+    background-color: #ff1e00;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-reserver:hover {
+    background-color: #f0030379;
 }
