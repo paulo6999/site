@@ -220,3 +220,26 @@ footer {
 .btn-reserver:hover {
     background-color: #f0030379;
 }
+
+
+/* Bouton flottant en bas de la page */
+#popup-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9B2E2E;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Effet au survol */
+#popup-button:hover {
+    background-color: #B84545;
+    transform: scale(1.1);
+}
