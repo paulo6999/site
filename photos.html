@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+
+<!-- Swiper.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Shop</title>
@@ -32,3 +39,55 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Notre Galerie</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="photo1.jpg" alt="Coupe 1"></div>
+                    <div class="swiper-slide"><img src="photo2.jpg" alt="Coupe 2"></div>
+                    <div class="swiper-slide"><img src="photo3.jpg" alt="Coupe 3"></div>
+                    <div class="swiper-slide"><img src="photo4.jpg" alt="Coupe 4"></div>
+                    <div class="swiper-slide"><img src="photo5.jpg" alt="Coupe 5"></div>
+                </div>
+                
+                <div class="swiper-button-next"></div>        <!-- Flèches de navigation -->
+                <div class="swiper-button-prev"></div>        <!-- Flèches de navigation -->
+                <div class="swiper-pagination"></div>     <!-- pagination -->
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- swiper.js script  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+
+</body>
+
+<footer>
+    <p>&copy; 2025 Barber Shop. Tous droits réservés.</p>
+</footer>
+
+</html>
+
+
+</footer>

@@ -333,4 +333,33 @@ footer {
     }
 }
 
+/* photos.html */
+#gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Swiper */
+.swiper {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .swiper {
+        width: 95%;
+        height: 300px;
+    }
+}
 
