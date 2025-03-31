@@ -36,12 +36,22 @@
             <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
     
             <label for="message">Votre message :</label>
-            <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required maxlength="800" style="resize: vertical; max-height: 300px;"></textarea>
-            <div style="text-align: right; font-size: 0.8em;">800 caractères max</div>
+            <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required maxlength="800" style="resize: vertical; max-height: 300px;" oninput="updateCharacterCount()"></textarea>
+            <div style="text-align: right; font-size: 0.8em;">
+                <span id="charCount">0</span>/800 caractères max
+            </div>
     
             <button type="submit">Envoyer</button>
         </form>
     </section>
+
+    <script>
+        function updateCharacterCount() {
+            const message = document.getElementById('message');
+            const charCount = document.getElementById('charCount');
+            charCount.textContent = message.value.length;
+        }
+    </script>
 
         <section id="map">
             <h2>Notre adresse</h2>
